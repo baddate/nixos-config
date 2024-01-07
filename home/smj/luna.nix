@@ -18,6 +18,11 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    ./cli
+    ./shell/bash.nix
+    ./shell/zsh.nix
+
+    ./terminal/alacritty.nix
   ];
 
   nixpkgs = {
