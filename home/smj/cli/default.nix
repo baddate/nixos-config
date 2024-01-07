@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ./zoxide.nix
+    ./atuin.nix
   ];
   home.packages = with pkgs; [
     bottom # System viewer
