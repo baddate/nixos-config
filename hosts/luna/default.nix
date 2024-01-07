@@ -21,6 +21,7 @@
     # ./users.nix
     ../common/global
     ../common/optional/pipewire.nix
+    ../common/optional/boot.nix
 
     ../common/users/smj
 
@@ -76,10 +77,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
-  # TODO: This is just an example, be sure to use whatever bootloader you prefer
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
