@@ -77,6 +77,9 @@ exec_always --no-startup-id dunst
 # fcitx5 auto start
 exec --no-startup-id fcitx5 -d
 
+# autostart picom
+exec --no-startup-id picom -b
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
