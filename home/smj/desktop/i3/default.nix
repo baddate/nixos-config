@@ -3,6 +3,7 @@
     ../dunst
     ../fcitx5
     ../picom
+    ../../gtk
   ];
   home.file.".config/i3/config".source = ./config;
   services.flameshot = {
