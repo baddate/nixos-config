@@ -25,7 +25,6 @@
       windowManager.i3 = {
         enable = true;
         extraPackages = with pkgs; [
-          i3blocks      # status bar
           i3lock        # default i3 screen locker
           i3status      # provide information to i3bar
           rofi          # application launcher, the same as dmenu
@@ -36,6 +35,7 @@
           xorg.xdpyinfo # get screen information
           sysstat       # get system information
           dex           # autostart applications
+          polybar
       ];
       };
     };

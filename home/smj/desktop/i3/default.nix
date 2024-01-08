@@ -4,6 +4,7 @@
     ../fcitx5
     ../picom
     ../../gtk
+    ../polybar
   ];
   home.file.".config/i3/config".source = ./config;
   services.flameshot = {
