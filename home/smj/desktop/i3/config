@@ -71,6 +71,9 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # start screenshot
 bindsym $mod+Shift+x exec flameshot gui
 
+# Use Dunst as the notification service
+exec --no-startup-id dunst
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
