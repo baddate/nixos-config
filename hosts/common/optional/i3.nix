@@ -2,7 +2,6 @@
   imports = [
     ./thunar.nix
     ./polkit.nix
-    ./xdg.nix
   ];
   environment = {
     # i3block works with this config https://nixos.wiki/wiki/I3#i3blocks
