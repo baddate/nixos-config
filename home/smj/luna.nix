@@ -23,6 +23,8 @@
     ./shell/zsh.nix
 
     ./terminal/alacritty.nix
+
+    ./editor/neovim
   ];
 
   nixpkgs = {
