@@ -2,6 +2,7 @@
   imports = [
     ./zoxide.nix
     ./atuin.nix
+    ./git.nix
   ];
   home.packages = with pkgs; [
     bottom # System viewer
