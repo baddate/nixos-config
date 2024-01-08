@@ -23,6 +23,8 @@
     ./shell/zsh.nix
 
     ./terminal/alacritty.nix
+
+    ./desktop/i3
   ];
 
   nixpkgs = {
