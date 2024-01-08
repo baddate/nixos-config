@@ -1,4 +1,7 @@
 {pkgs, ...}: {
+  imports = [
+    ./thunar.nix
+  ];
   services = {
     xserver = {
       enable = true;
