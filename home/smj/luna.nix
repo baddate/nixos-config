@@ -25,6 +25,7 @@
     ./terminal/alacritty.nix
 
     ./editor/neovim
+    ./desktop/i3
   ];
 
   nixpkgs = {
