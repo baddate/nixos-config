@@ -21,6 +21,10 @@
         frame_color = "#8AADF4";
         separator_color= "#8AADF4";
       };
+      ignore = {
+        appname = "fcitx5";
+        skip_display = true;
+      };
       urgency_low = {
         background = "#24273A";
         foreground = "#CAD3F5";
