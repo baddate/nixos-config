@@ -20,8 +20,9 @@
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
     ../common/global
+
     ../common/optional/pipewire.nix
-    ../common/optional/boot.nix
+    ../common/optional/systemd-boot.nix
     ../common/optional/gnome.nix
 
     ../common/users/smj
