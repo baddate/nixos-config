@@ -1,10 +1,16 @@
 {pkgs, ...}: {
   imports = [
     ./thunar.nix
+    ./polkit.nix
   ];
   environment = {
     # i3block works with this config https://nixos.wiki/wiki/I3#i3blocks
     pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
+
+    # add authentication agent for polkit usage
+    systemPackages = [
+      pkgs.polkit_gnome
+    ];
   };
 
   services = {
