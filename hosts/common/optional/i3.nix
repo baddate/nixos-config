@@ -35,6 +35,7 @@
           xbindkeys     # bind keys to commands
           xorg.xdpyinfo # get screen information
           sysstat       # get system information
+          dex           # autostart applications
       ];
       };
     };
