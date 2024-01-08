@@ -30,7 +30,6 @@
           i3lock        # default i3 screen locker
           i3status      # provide information to i3bar
           rofi          # application launcher, the same as dmenu
-          dunst         # notification daemon
           xautolock     # lock screen after some time
           picom         # transparency and shadows
           feh           # set wallpaper
