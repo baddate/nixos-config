@@ -3,8 +3,8 @@
   services.dunst = {
     enable = true;
     iconTheme = {
-      name = "Adwaita";
-      package = pkgs.gnome3.adwaita-icon-theme;
+      name = "WhiteSur";
+      package = pkgs.whitesur-icon-theme;
       size = "16x16";
     };
     settings = {
