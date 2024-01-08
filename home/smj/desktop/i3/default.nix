@@ -12,4 +12,6 @@
       };
     };
   };
+  # enable XDG base dir
+  xdg.enable = true;
 }
