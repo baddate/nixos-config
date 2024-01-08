@@ -7,6 +7,7 @@
     ../polybar
   ];
   home.file.".config/i3/config".source = ./config;
+  home.file.".config/i3/background.jpg".source = ./background.jpg;
   services.flameshot = {
     enable = true;
     settings = {
