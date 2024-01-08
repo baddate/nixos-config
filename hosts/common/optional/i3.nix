@@ -34,4 +34,8 @@
       };
     };
   };
+  # fix gvfs doesn't work
+  # https://nixos.wiki/wiki/GNOME#Running_GNOME_programs_outside_of_GNOME
+  # https://nixos.wiki/wiki/I3#DConf
+  programs.dconf.enable = true;
 }
