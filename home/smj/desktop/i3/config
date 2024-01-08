@@ -74,6 +74,9 @@ bindsym $mod+Shift+x exec flameshot gui
 # Use Dunst as the notification service
 exec_always --no-startup-id dunst
 
+# fcitx5 auto start
+exec --no-startup-id fcitx5 -d
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
