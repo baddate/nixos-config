@@ -35,7 +35,7 @@
           xorg.xdpyinfo # get screen information
           sysstat       # get system information
           dex           # autostart applications
-          polybar
+          polybarFull
       ];
       };
     };
