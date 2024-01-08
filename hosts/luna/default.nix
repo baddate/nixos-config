@@ -25,7 +25,7 @@
 
     ../common/optional/pipewire.nix
     ../common/optional/systemd-boot.nix
-    ../common/optional/gnome.nix
+    ../common/optional/i3.nix
 
     ../common/users/smj
 
