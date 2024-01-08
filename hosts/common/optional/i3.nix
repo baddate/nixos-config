@@ -2,6 +2,11 @@
   imports = [
     ./thunar.nix
   ];
+  environment = {
+    # i3block works with this config https://nixos.wiki/wiki/I3#i3blocks
+    pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
+  };
+
   services = {
     xserver = {
       enable = true;
@@ -14,7 +19,6 @@
       windowManager.i3 = {
         enable = true;
         extraPackages = with pkgs; [
-          i3            # i3
           i3blocks      # status bar
           i3lock        # default i3 screen locker
           i3status      # provide information to i3bar
