@@ -8,7 +8,7 @@
     settings = {
       auto_sync = true;
       sync_frequency = "10m";
-      sync_address = "https://atuin.smj.im";
+      sync_address = "https://atuin.oois.xyz";
       search_mode = "prefix";
       common_prefix = ["sudo"];
       enter_accept = true;
