@@ -19,6 +19,7 @@
       packages = with pkgs; [
         firefox
         vscodium
+        gittyup
       #  thunderbird
       ];
     };
