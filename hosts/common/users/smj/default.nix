@@ -7,8 +7,7 @@
       # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
       # Be sure to change it (using passwd) after rebooting!
       initialPassword = "password";
-      # shell = pkgs.zsh;
-      useDefaultShell = true;
+      shell = pkgs.zsh;
       isNormalUser = true;
       # openssh.authorizedKeys.keys = [
       #   # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
@@ -24,6 +23,5 @@
       ];
     };
   };
-  users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
 }
