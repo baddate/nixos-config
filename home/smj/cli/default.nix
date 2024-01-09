@@ -14,6 +14,7 @@
     jq # JSON pretty printer and manipulator
     timer # To help with my ADHD paralysis
     neofetch # Machine info viewer
+    gnumake
   ];
   programs.eza = {
     enable = true;
