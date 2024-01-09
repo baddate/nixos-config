@@ -10,6 +10,7 @@
           marksman.enable = true;
           pylsp.enable = true;
           yamlls.enable = true;
+          nixd.enable = true;
         };
       };
       lspkind = {
