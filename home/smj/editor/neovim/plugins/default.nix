@@ -10,5 +10,6 @@
     ./filetree
     ./tabline
     ./statusline
+    ./terminal
   ];
 }
