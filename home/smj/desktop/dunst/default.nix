@@ -22,7 +22,7 @@
         separator_color= "#8AADF4";
       };
       ignore = {
-        appname = "fcitx5";
+        appname = "Rime";
         skip_display = true;
       };
       urgency_low = {
