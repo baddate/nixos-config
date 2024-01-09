@@ -59,6 +59,10 @@
   home = {
     username = "smj";
     homeDirectory = "/home/smj";
+
+    sessionVariables = {
+      TERMINAL = "alacritty";
+    };
   };
 
   # Add stuff for your user as you see fit:
