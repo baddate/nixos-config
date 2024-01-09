@@ -57,7 +57,7 @@
             position = "center";
           };
           type = "text";
-          val = siph;
+          val = nixFlake;
         }
         {
           type = "padding";
@@ -82,14 +82,14 @@
           type = "padding";
           val = 2;
         }
-        {
-          opts = {
-            hl = "GruvboxBlue";
-            position = "center";
-          };
-          type = "text";
-          val = "https://github.com/siph/nixvim-flake";
-        }
+        # {
+        #   opts = {
+        #     hl = "GruvboxBlue";
+        #     position = "center";
+        #   };
+        #   type = "text";
+        #   val = "https://github.com/siph/nixvim-flake";
+        # }
       ];
     };
 	};
