@@ -3,6 +3,7 @@
     ./zoxide.nix
     ./atuin.nix
     ./git.nix
+    ./ziptools.nix
   ];
   home.packages = with pkgs; [
     bottom # System viewer
