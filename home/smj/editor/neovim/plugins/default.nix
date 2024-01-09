@@ -9,5 +9,6 @@
     ./visuals
     ./filetree
     ./tabline
+    ./statusline
   ];
 }
