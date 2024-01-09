@@ -19,12 +19,20 @@
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
     # nix-colors.url = "github:misterio77/nix-colors";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
+      # url = "github:nix-community/nixvim/nixos-23.05";
+
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    nixvim,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -46,6 +54,9 @@
       inherit system;
       config.allowUnfree = true;
     });
+    customHomeModules = [
+      nixvim.homeManagerModules.nixvim
+    ];
   in {
     # Your custom packages
     # Accessible through 'nix build', 'nix shell', etc
@@ -87,7 +98,8 @@
         modules = [
           # > Our main home-manager configuration file <
           ./home/smj/luna.nix
-        ];
+        ]
+        ++ customHomeModules;
       };
     };
   };
