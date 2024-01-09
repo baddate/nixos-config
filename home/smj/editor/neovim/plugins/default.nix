@@ -7,5 +7,6 @@
     ./telescope
     ./treesitter
     ./visuals
+    ./filetree
   ];
 }
