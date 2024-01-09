@@ -24,7 +24,6 @@
 
     ./terminal/alacritty.nix
 
-    ./editor/neovim
     ./desktop/i3
   ];
 
