@@ -9,7 +9,7 @@
       auto_sync = true;
       sync_frequency = "10m";
       sync_address = "https://atuin.oois.xyz";
-      search_mode = "prefix";
+      search_mode = "fuzzy";
       common_prefix = ["sudo"];
       enter_accept = true;
     };
