@@ -19,6 +19,9 @@ debug:
 test:
 	nixos-rebuild test --flake .#luna --use-remote-sudo
 
+luna:
+	home-manager switch --flake .#smj@luna
+
 update:
 	nix flake update
 
