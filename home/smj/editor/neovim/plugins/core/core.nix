@@ -40,6 +40,12 @@
         key = "<C-l>";
         action = "<C-w>l";
       }
+
+      {
+        mode = [ "n" "i" ];
+        key = "<C-s>";
+        action = "<CMD>:w<CR><Esc>";
+      }
     ];
     clipboard = {
       register = "unnamedplus";
