@@ -3,6 +3,5 @@
     zip
     unzip
     p7zip
-    xarchiver
   ];
 }
