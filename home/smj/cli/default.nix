@@ -4,6 +4,7 @@
     ./atuin.nix
     ./git.nix
     ./ziptools.nix
+    ./direnv.nix
   ];
   home.packages = with pkgs; [
     bottom # System viewer
