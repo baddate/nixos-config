@@ -17,8 +17,8 @@
         "zoxide"
       ];
     };
-    initExtra = ''
-      eval "$(direnv hook zsh)"
-    '';
+    # initExtra = ''
+    #   eval "$(direnv hook zsh)"
+    # '';
   };
 }
