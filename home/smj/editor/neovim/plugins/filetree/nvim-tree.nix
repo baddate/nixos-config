@@ -6,6 +6,7 @@
         enable = true;
         ignore = false;
       };
+      openOnSetup = true;
       diagnostics.enable = true;
       view.float.enable = true;
       updateFocusedFile.enable = true;
