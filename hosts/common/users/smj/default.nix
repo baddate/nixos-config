@@ -1,4 +1,7 @@
-{ pkgs, config, ... }:{
+{ pkgs, config, ... }:
+let ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
+in
+{
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     # FIXME: Replace with your username
@@ -14,7 +17,15 @@
       # ];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       description = "Sanmoji";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [
+        "wheel"
+      ] ++ ifTheyExist [
+        "networkmanager"
+        "mysql"
+        "docker"
+        "podman"
+        "git"
+      ];
       packages = with pkgs; [
         firefox
         vscodium
