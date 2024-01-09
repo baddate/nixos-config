@@ -23,18 +23,18 @@
 
       theme = let
         colors = {
-          aqua = "#8ec07c";
-          black = "#282828";
-          blue = "#83a598";
-          darkgray = "#3c3836";
-          gray = "#a89984";
-          green = "#b8bb26";
-          inactivegray = "#7c6f64";
-          lightgray = "#504945";
-          red = "#fb4934";
+          aqua = "#8bd5ca";
+          black = "#181926";
+          blue = "#8aadf4";
+          darkgray = "#6e738d";
+          gray = "#8087a2";
+          green = "#a6da95";
+          inactivegray = "#939ab7";
+          lightgray = "#a5adcb";
+          red = "#ed8796";
           transparent = "none";
-          white = "#ebdbb2";
-          yellow = "#fe8019";
+          white = "#cad3f5";
+          yellow = "#f5bde6";
         };
       in {
         normal = {
