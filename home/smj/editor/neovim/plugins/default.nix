@@ -11,5 +11,6 @@
     ./tabline
     ./statusline
     ./terminal
+    ./formatter
   ];
 }
