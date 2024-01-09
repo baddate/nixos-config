@@ -6,10 +6,11 @@
         enable = true;
         ignore = false;
       };
-      openOnSetup = true;
+      openOnSetup = false;
       diagnostics.enable = true;
-      view.float.enable = false;
+      view.float.enable = true;
       updateFocusedFile.enable = true;
+      hijackUnnamedBufferWhenOpening = true;
     };
 
     keymaps = [
