@@ -5,5 +5,7 @@
     ./core
     ./lsp
     ./telescope
+    ./treesitter
+    ./visuals
   ];
 }
