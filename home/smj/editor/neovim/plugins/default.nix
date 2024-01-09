@@ -8,5 +8,6 @@
     ./treesitter
     ./visuals
     ./filetree
+    ./tabline
   ];
 }
