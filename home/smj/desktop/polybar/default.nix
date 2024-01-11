@@ -146,7 +146,7 @@ in {
       "module/audio" = {
         type = "internal/alsa";
 
-        format-volume = "墳 VOL <label-volume>";
+        format-volume = "󰕾 VOL <label-volume>";
         format-volume-padding = 1;
         format-volume-foreground = secondary;
         format-volume-background = tertiary;
@@ -156,7 +156,7 @@ in {
         format-muted-padding = 1;
         format-muted-foreground = secondary;
         format-muted-background = tertiary;
-        format-muted-prefix = "婢 ";
+        format-muted-prefix = "󰝟 ";
         format-muted-prefix-foreground = urgency;
         format-muted-overline = bg;
 
@@ -238,15 +238,17 @@ in {
         format-background = tertiary;
 
         ws-icon-0 = "1;";
-        ws-icon-1 = "2;";
-        ws-icon-2 = "3;﬏";
-        ws-icon-3 = "4;";
-        ws-icon-4 = "5;";
+        ws-icon-1 = "2;󰈹";
+        ws-icon-2 = "3;󰝰";
+        ws-icon-3 = "4;󰊢";
+        ws-icon-4 = "5;󰨞";
+        # ws-icon-3 = "4;󰍩";
+        # ws-icon-4 = "5;󰏆";
         ws-icon-5 = "6;";
         ws-icon-6 = "7;";
         ws-icon-7 = "8;";
-        ws-icon-8 = "9;";
-        ws-icon-9 = "10;";
+        ws-icon-8 = "9;󰎼";
+        ws-icon-9 = "10;󰎡";
 
         label-mode = "%mode%";
         label-mode-padding = 1;
@@ -283,7 +285,7 @@ in {
 
         interval = 3;
 
-        format = " <label>";
+        format = "󰍛 <label>";
         format-background = tertiary;
         format-foreground = secondary;
         format-padding = 1;
@@ -354,16 +356,18 @@ in {
         format-background = secondary;
         format-padding = 1;
 
-        label-open = "";
-        label-close = "";
+        label-open = " ";
+        label-close = " ";
         label-separator = "  ";
 
         menu-0-0 = " Suspend";
         menu-0-0-exec = "systemctl suspend";
-        menu-0-1 = " Reboot";
-        menu-0-1-exec = "v";
-        menu-0-2 = " Shutdown";
-        menu-0-2-exec = "systemctl poweroff";
+        menu-0-1 = "󰍃 Logout";
+        menu-0-1-exec = "i3-msg exit";
+        menu-0-2 = " Reboot";
+        menu-0-2-exec = "systemctl reboot";
+        menu-0-3 = " Shutdown";
+        menu-0-3-exec = "systemctl poweroff";
       };
 
       #"module/wireless-network" = {
