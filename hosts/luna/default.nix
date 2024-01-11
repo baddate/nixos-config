@@ -64,6 +64,7 @@
 
   # FIXME: Add the rest of your current configuration
 
+  networking.hostName = "luna"; # Define your hostname.
   # Enable networking
   networking.networkmanager.enable = true;
 
