@@ -62,6 +62,8 @@ in {
 
         font-0 = "Iosevka Nerd Font:size=12;3";
         font-1 = "Iosevka Nerd Font:style=Bold:size=12;3";
+        font-2 = "GeistMono Nerd Font:style=Bold:size=12;3";
+        font-3 = "Symbols Nerd Font:style=Bold:size=12;3";
 
         modules-left = "distro-icon dulS ddrT i3 dulT";
         modules-center = "title";
@@ -88,6 +90,8 @@ in {
 
         font-0 = "Iosevka Nerd Font:size=12;3";
         font-1 = "Iosevka Nerd Font:style=Bold:size=12;3";
+        font-2 = "GeistMono Nerd Font:style=Bold:size=12;3";
+        font-3 = "Symbols Nerd Font:style=Bold:size=12;3";
 
         modules-left = "powermenu ddlS";
 
