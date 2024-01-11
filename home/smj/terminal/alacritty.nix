@@ -6,7 +6,7 @@
 
     settings = {
       window = {
-        title = "Terminal";
+        # title = "Terminal";
 
         opacity = 0.3;
         padding = { y = 5; };
