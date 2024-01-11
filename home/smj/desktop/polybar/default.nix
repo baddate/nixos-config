@@ -264,7 +264,7 @@ in {
         label-unfocused-foreground = quinternary;
         label-unfocused-padding = 1;
 
-        label-focused = "%index% %icon%";
+        label-focused = "%index% %icon% ";
         label-focused-font = 2;
         label-focused-foreground = secondary;
         label-focused-padding = 1;
