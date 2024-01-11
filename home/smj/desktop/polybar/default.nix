@@ -232,8 +232,10 @@ in {
 
       "module/i3" = {
         type = "internal/i3";
-        pin-workspaces = false;
+        pin-workspaces = true;
         strip-wsnumbers = true;
+        show-urgent = true;
+        index-sort = true;
         format = "<label-state> <label-mode>";
         format-background = tertiary;
 
@@ -242,8 +244,6 @@ in {
         ws-icon-2 = "3;󰝰";
         ws-icon-3 = "4;󰊢";
         ws-icon-4 = "5;󰨞";
-        # ws-icon-3 = "4;󰍩";
-        # ws-icon-4 = "5;󰏆";
         ws-icon-5 = "6;";
         ws-icon-6 = "7;";
         ws-icon-7 = "8;";
@@ -295,7 +295,7 @@ in {
 
       "module/network" = {
         type = "internal/network";
-        interface = "enp3s0";
+        interface = "wlp5s0";
 
         interval = "1.0";
 
