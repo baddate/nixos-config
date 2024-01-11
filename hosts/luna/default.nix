@@ -24,8 +24,11 @@
     ../common/global
 
     ../common/optional/pipewire.nix
-    ../common/optional/systemd-boot.nix
+    ../common/optional/grub.nix
     ../common/optional/i3.nix
+    ../common/optional/thunar.nix
+    ../common/optional/polkit.nix
+    ../common/optional/networking.nix
 
     ../common/users/smj
 
