@@ -89,6 +89,8 @@ exec --no-startup-id /run/current-system/sw/libexec/polkit-gnome-authentication-
 # polybar
 exec_always --no-startup-id systemctl --user restart polybar.service
 
+exec_always --no-startup-id feh --bg-scale /home/smj/.config/i3/background.jpg
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
