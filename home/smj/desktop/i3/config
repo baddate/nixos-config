@@ -87,7 +87,7 @@ exec xautolock -time 10 -locker "i3lock -i /home/smj/.config/i3/background.jpg" 
 exec --no-startup-id /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
 
 # polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id systemctl --user restart polybar.service
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
