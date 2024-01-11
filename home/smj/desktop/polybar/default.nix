@@ -144,7 +144,7 @@ in {
       };
 
       "module/audio" = {
-        type = "internal/alsa";
+        type = "internal/pulseaudio";
 
         format-volume = "󰕾 VOL <label-volume>";
         format-volume-padding = 1;
