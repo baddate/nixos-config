@@ -84,14 +84,6 @@ in {
 
         radius-top = 0;
 
-        tray-position = "left";
-        tray-detached = false;
-        tray-maxsize = 15;
-        tray-background = primary;
-        tray-offset-x = -19;
-        tray-offset-y = 0;
-        tray-padding = 5;
-        tray-scale = 1;
         padding = 0;
 
         font-0 = "Iosevka Nerd Font:size=12;3";
@@ -99,7 +91,7 @@ in {
 
         modules-left = "powermenu ddlS";
 
-        modules-right = "ddrS cpu dulS ddrT memory dulT ddrP battery";
+        modules-right = "ddrS cpu dulS ddrT memory dulT ddrP";
 
         locale = "en_US.UTF-8";
       };
@@ -121,6 +113,17 @@ in {
       };
 
       #--------------------MODULES--------------------"
+      "module/tray" = {
+        type = "internal/tray";
+        tray-position = "left";
+        tray-detached = false;
+        tray-maxsize = 15;
+        tray-background = primary;
+        tray-offset-x = -19;
+        tray-offset-y = 0;
+        tray-padding = 5;
+        tray-scale = 1;
+      };
 
       "module/distro-icon" = {
         type = "custom/script";
