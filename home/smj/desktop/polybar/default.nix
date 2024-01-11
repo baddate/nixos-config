@@ -6,29 +6,29 @@
 # Re Edited and ported to Nix by smj
 
 let
-  ac = "#1E88E5";
+  ac = "#8aadf4";
   mf = "#383838";
 
   bg = "#00000000";
-  fg = "#FFFFFF";
+  fg = "#cad3f5";
 
   # Colored
-  primary = "#91ddff";
+  primary = "#91d7e3";
 
   # Dark
   secondary = "#141228";
 
   # Colored (light)
-  tertiary = "#65b2ff";
+  tertiary = "#7dc4e4";
 
   # white
   quaternary = "#ecf0f1";
 
   # middle gray
-  quinternary = "#20203d";
+  quinternary = "#6e738d";
 
   # Red
-  urgency = "#e74c3c";
+  urgency = "#fd3746";
 
 in {
   services.polybar = {
@@ -258,6 +258,7 @@ in {
 
         label-mode = "%mode%";
         label-mode-padding = 1;
+        label-mode-foreground = "#dd10d6";
 
         label-unfocused = "%icon%";
         label-unfocused-foreground = quinternary;
