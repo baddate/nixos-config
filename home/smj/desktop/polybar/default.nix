@@ -35,7 +35,10 @@ in {
     enable = true;
 
     script = "polybar -q -r top & polybar -q -r bottom &";
-
+    package = pkgs.polybar.override {
+      i3Support = true;
+      pulseSupport = true;
+    };
     config = {
       "global/wm" = {
         margin-bottom = 0;
@@ -146,11 +149,14 @@ in {
       "module/audio" = {
         type = "internal/pulseaudio";
 
-        format-volume = "󰕾 VOL <label-volume>";
+        format-volume = "<ramp-volume> <label-volume>";
         format-volume-padding = 1;
         format-volume-foreground = secondary;
         format-volume-background = tertiary;
         label-volume = "%percentage%%";
+        ramp-volume-0="󰕿";
+        ramp-volume-1="󰖀";
+        ramp-volume-2="󰕾";
 
         format-muted = "<label-muted>";
         format-muted-padding = 1;
@@ -160,7 +166,7 @@ in {
         format-muted-prefix-foreground = urgency;
         format-muted-overline = bg;
 
-        label-muted = "VOL Muted";
+        label-muted = "Muted";
       };
 
       "module/battery" = {
