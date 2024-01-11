@@ -26,6 +26,7 @@
 
     ./desktop/i3
     ./editor/neovim
+    ./desktop/email
   ];
 
   nixpkgs = {
