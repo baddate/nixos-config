@@ -13,14 +13,14 @@
       size = 200000;
     };
 
-    # oh-my-zsh = {
-    #   enable = true;
-    #   theme = "robbyrussell";
-    #   plugins = [
-    #     "git"
-    #     "zoxide"
-    #   ];
-    # };
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell";
+      # plugins = [
+      #   "git"
+      #   "zoxide"
+      # ];
+    };
     initExtraFirst = ''
       # fast-syntax-highlighting config
       export FAST_WORK_DIR=XDG;
