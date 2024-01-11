@@ -34,6 +34,9 @@
           "FiraCode"
           "JetBrainsMono"
           "Iosevka"
+          "Meslo" # apple font
+          "GeistMono" # vercel opensource font
+          "Terminus"
         ];
       })
       julia-mono
@@ -44,10 +47,10 @@
     # the reason there's Noto Color Emoji everywhere is to override DejaVu's
     # B&W emojis that would sometimes show instead of some Color emojis
     fontconfig.defaultFonts = {
-      serif = ["Noto Serif CJK SC" "Noto Serif CJK TC" "Noto Serif CJK JP" "Noto Color Emoji"];
-      sansSerif = ["Noto Sans CJK SC" "Noto Sans CJK TC" "Noto Sans CJK JP" "Noto Color Emoji"];
-      monospace = ["JetBrainsMono Nerd Font" "Noto Color Emoji"];
-      emoji = ["Noto Color Emoji"];
+      serif = ["Noto Serif CJK SC" "Noto Serif CJK TC" "Noto Serif CJK JP" "Noto Color Emoji" "DejaVu Serif" "Symbols Nerd Font"];
+      sansSerif = ["Noto Sans CJK SC" "Noto Sans CJK TC" "Noto Sans CJK JP" "Noto Color Emoji" "DejaVu Sans" "Symbols Nerd Font"];
+      monospace = ["GeistMono Nerd Font" "JetBrainsMono Nerd Font" "Noto Color Emoji" "Symbols Nerd Font"];
+      emoji = ["Noto Color Emoji" "Symbols Nerd Font"];
     };
   };
 }
