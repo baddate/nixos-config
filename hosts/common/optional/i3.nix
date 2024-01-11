@@ -24,17 +24,17 @@
       windowManager.i3 = {
         enable = true;
         extraPackages = with pkgs; [
-          i3lock        # default i3 screen locker
-          i3status      # provide information to i3bar
-          rofi          # application launcher, the same as dmenu
-          xautolock     # lock screen after some time
-          picom         # transparency and shadows
-          feh           # set wallpaper
-          xbindkeys     # bind keys to commands
-          xorg.xdpyinfo # get screen information
-          sysstat       # get system information
-          dex           # autostart applications
-      ];
+            i3lock        # default i3 screen locker
+            i3status      # provide information to i3bar
+            rofi          # application launcher, the same as dmenu
+            xautolock     # lock screen after some time
+            picom         # transparency and shadows
+            feh           # set wallpaper
+            xbindkeys     # bind keys to commands
+            xorg.xdpyinfo # get screen information
+            sysstat       # get system information
+            dex           # autostart applications
+        ];
       };
     };
   };
