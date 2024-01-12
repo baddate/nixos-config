@@ -25,7 +25,7 @@
     ./terminal/alacritty.nix
 
     ./desktop/i3
-    ./editor/neovim
+    ./editor/astronvim
     ./desktop/email
   ];
 
