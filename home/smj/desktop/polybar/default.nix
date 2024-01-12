@@ -328,7 +328,7 @@ in {
         format-disconnected-padding = 2;
         format-disconnected-margin = 0;
 
-        label-connected = "D %downspeed:2% | U %upspeed:2%";
+        label-connected = "󰕒 %downspeed:2% | 󰇚 %upspeed:2%";
         label-disconnected = "DISCONNECTED";
       };
 
