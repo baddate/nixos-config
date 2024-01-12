@@ -67,6 +67,8 @@ in {
         font-1 = "Iosevka Nerd Font:style=Bold:size=12;3";
         font-2 = "GeistMono Nerd Font:style=Bold:size=12;3";
         font-3 = "Symbols Nerd Font:style=Bold:size=12;3";
+        font-4 = "GeistMono Nerd Font:style=UltraBlack:size=14;3";
+        font-5 = "DejaVu Sans:style=Condensed Bold:size=12;3";
 
         modules-left = "distro-icon dulS ddrT i3 dulT";
         modules-center = "title";
@@ -95,6 +97,7 @@ in {
         font-1 = "Iosevka Nerd Font:style=Bold:size=12;3";
         font-2 = "GeistMono Nerd Font:style=Bold:size=12;3";
         font-3 = "Symbols Nerd Font:style=Bold:size=12;3";
+        font-4 = "GeistMono Nerd Font:style=UltraBlack:size=14;3";
 
         modules-left = "powermenu ddlS";
 
@@ -265,7 +268,7 @@ in {
         label-unfocused-padding = 1;
 
         label-focused = "%index% %icon% ";
-        label-focused-font = 2;
+        label-focused-font = 5;
         label-focused-foreground = secondary;
         label-focused-padding = 1;
 
@@ -285,6 +288,7 @@ in {
         format-foreground = secondary;
         label = "%title%";
         label-maxlen = 70;
+        label-font = 6;
       };
 
       "module/memory" = {
