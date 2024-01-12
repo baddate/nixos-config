@@ -452,7 +452,7 @@ return {
 
     {
       "nvim-telescope/telescope.nvim",
-      branch = "0.1.x",
+      branch = "0.1.5",
       dependencies = { "nvim-lua/plenary.nvim" },
       init = function()
         -- 1. Disable highlighting for certain filetypes
@@ -498,6 +498,7 @@ return {
             buffer_previewer_maker = new_maker,
           },
         })
+        require('telescope').load_extension('fzy_native')
       end,
     },
   },
