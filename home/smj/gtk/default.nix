@@ -19,4 +19,7 @@
       package = pkgs.whitesur-gtk-theme;
     };
   };
+  home.packages = with pkgs; [
+    lxappearance
+  ];
 }
