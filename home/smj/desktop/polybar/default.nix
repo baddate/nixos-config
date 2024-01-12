@@ -98,7 +98,7 @@ in {
 
         modules-left = "powermenu ddlS";
 
-        modules-right = "ddrS cpu dulS ddrT memory dulT ddrP";
+        modules-right = "ddrT network dulT ddrS cpu dulS ddrT memory dulT ddrP";
 
         locale = "en_US.UTF-8";
       };
@@ -309,14 +309,15 @@ in {
         accumulate-stats = true;
         unknown-as-up = true;
 
-        format-connected = "<label-connected>";
-        format-connected-background = mf;
+        format-connected = "󰖩 <label-connected>";
+        format-connected-background = tertiary;
+        format-connected-foreground = secondary;
         format-connected-underline = bg;
         format-connected-overline = bg;
         format-connected-padding = 2;
         format-connected-margin = 0;
 
-        format-disconnected = "<label-disconnected>";
+        format-disconnected = "󰖪 <label-disconnected>";
         format-disconnected-background = mf;
         format-disconnected-underline = bg;
         format-disconnected-overline = bg;
