@@ -8,8 +8,8 @@
   alternate-urgent-background: @selected-normal-background;
   active-foreground:           #C0CAF5;
   selected-active-foreground:  @active-foreground;
-  alternate-active-background: #1A1B26;
-  background:                  #1A1B26;
+  alternate-active-background: #1A1B261C;
+  background:                  transparent;
   alternate-normal-foreground: @foreground;
   normal-background:           @background;
   selected-normal-background:  #7AA2F7;
