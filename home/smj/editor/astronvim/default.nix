@@ -25,8 +25,9 @@ in {
     };
 
     # my custom astronvim config.
+    # TODO push my config to github and pull it
     "astronvim/lua/user" = {
-      source = ./astronvim_user;
+      source = ./custom;
     };
   };
 
