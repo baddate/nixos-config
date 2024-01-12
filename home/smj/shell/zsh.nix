@@ -25,7 +25,7 @@
       # fast-syntax-highlighting config
       # export FAST_WORK_DIR=XDG;
 
-      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#f5bde6,bg=cyan,bold,underline"
+      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#1e2030,bg=cyan,bold,underline"
 
       ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets pattern cursor)
       # To define styles for nested brackets up to level 4
