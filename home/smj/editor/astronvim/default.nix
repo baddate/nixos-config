@@ -55,4 +55,7 @@ in {
       # ];
     };
   };
+  home.packages = [
+    pkgs.xclip
+  ];
 }
