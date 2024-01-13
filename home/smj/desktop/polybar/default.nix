@@ -280,7 +280,7 @@ in {
         label-urgent-foreground = urgency;
         label-urgent-padding = 1;
         label-urgent-font = 7;
-        
+
 
         label-separator = "";
       };
@@ -331,7 +331,7 @@ in {
         format-disconnected-padding = 2;
         format-disconnected-margin = 0;
 
-        label-connected = "󰕒 %downspeed:2% | 󰇚 %upspeed:2%";
+        label-connected = "󰇚 %downspeed:2% | 󰕒 %upspeed:2%";
         label-disconnected = "DISCONNECTED";
       };
 
