@@ -27,6 +27,7 @@
     ./desktop/i3
     ./editor/astronvim
     ./desktop/email
+    ./desktop/firefox
   ];
 
   nixpkgs = {
