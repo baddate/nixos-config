@@ -276,7 +276,7 @@ in {
         label-visible = "%icon%";
         label-visible-padding = 1;
 
-        label-urgent = "%index%";
+        label-urgent = "%index% %icon% ";
         label-urgent-foreground = urgency;
         label-urgent-padding = 1;
         label-urgent-font = 7;
