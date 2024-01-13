@@ -27,7 +27,7 @@ in
         "git"
       ];
       packages = with pkgs; [
-        firefox
+        # firefox
         vscodium
         gittyup
       #  thunderbird
