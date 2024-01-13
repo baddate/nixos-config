@@ -220,7 +220,11 @@ return {
     -- joining blocks of code into oneline, or splitting one line into multiple lines.
     {
       "Wansmer/treesj",
-      keys = { "<space>m", "<space>j", "<space>s" },
+      keys = {
+        { "<space>m", desc = "Toggle code blocks" },
+        { "<space>j", desc = "Joining code blocks" },
+        { "<space>s", desc = "Splitting code blocks" },
+      },
       dependencies = { "nvim-treesitter/nvim-treesitter" },
       config = function()
         require("treesj").setup({ --[[ your config ]]
