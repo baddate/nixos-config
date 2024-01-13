@@ -34,8 +34,11 @@
         OverridePostUpdatePage = "";
         DontCheckDefaultBrowser = true;
         DisplayBookmarksToolbar = "never"; # alternatives: "always" or "newtab"
-        DisplayMenuBar = "default-off"; # alternatives: "always", "never" or "default-on"
+        DisplayMenuBar = "never"; # alternatives: "default-off", "never" or "default-on"
         SearchBar = "unified"; # alternative: "separate"
+        SearchEngines = {
+          Default = "DuckDuckGo";
+        };
 
         /* ---- EXTENSIONS ---- */
         # Check about:support for extension/add-on ID strings.
@@ -52,6 +55,11 @@
           "jid1-MnnxcxisBPnSXQ@jetpack" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
             installation_mode = "force_installed";
+          };
+          # Immersive Translate:
+          "{5efceaa7-f3a2-4e59-a54b-85319448e305}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/immersive-translate/latest.xpi";
+            installation_mode = "normal_installed";
           };
         };
   
