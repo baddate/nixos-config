@@ -30,6 +30,12 @@
       url = "github:AstroNvim/AstroNvim";
       flake = false;
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      # optional, not necessary for the module
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
