@@ -96,7 +96,7 @@
           };
           # Slash:
           "{fc9bcce4-c12e-4c13-9ae7-a2808580d9f4}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/slash/latest.xpi";
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/your-slash/latest.xpi";
             installation_mode = "normal_installed";
           };
           # User-Agent Switcher and Manager:
