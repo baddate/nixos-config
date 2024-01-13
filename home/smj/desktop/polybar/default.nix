@@ -69,6 +69,7 @@ in {
         font-3 = "Symbols Nerd Font:style=Bold:size=12;3";
         font-4 = "GeistMono Nerd Font:style=UltraBlack:size=14;3";
         font-5 = "DejaVu Sans:style=Condensed Bold:size=12;3";
+        font-6 = "GeistMono Nerd Font:style=UltraBlack:size=15;3";
 
         modules-left = "distro-icon dulS ddrT i3 dulT";
         modules-center = "title";
@@ -278,6 +279,8 @@ in {
         label-urgent = "%index%";
         label-urgent-foreground = urgency;
         label-urgent-padding = 1;
+        label-urgent-font = 7;
+        
 
         label-separator = "";
       };
