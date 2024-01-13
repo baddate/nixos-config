@@ -21,6 +21,17 @@ font pango:DejaVu Sans Mono 10
 
 workspace_auto_back_and_forth yes
 
+# To get the class and instance, you can use xprop. After clicking on the window, you will see the following output:
+# 
+# xprop:
+# 
+# WM_CLASS(STRING) = "irssi", "URxvt"
+# 
+# The first part of the WM_CLASS is the instance ("irssi" in this example), the second part is the class ("URxvt" in this example).
+assign [class="^firefox$"] 2
+assign [class="^Gittyup$"] 4
+assign [class="^thunderbird$"] 5
+
 # hide title bar
 # for_window [class=".*"] border pixel 3
 # new way https://gist.github.com/lirenlin/9892945
