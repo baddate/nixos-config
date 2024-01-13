@@ -37,7 +37,11 @@
         DisplayMenuBar = "never"; # alternatives: "default-off", "never" or "default-on"
         SearchBar = "unified"; # alternative: "separate"
         SearchEngines = {
-          Default = "DuckDuckGo";
+          Default = "DUCKDUCKGO";
+          Remove = [
+            "ebay"
+            "Amazon.ca"
+          ];
         };
         FirefoxHome = {
           Search = true;
@@ -83,13 +87,53 @@
           # Immersive Translate:
           "{5efceaa7-f3a2-4e59-a54b-85319448e305}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/immersive-translate/latest.xpi";
-            installation_mode = "allowed";
+            installation_mode = "normal_installed";
+          };
+          # Violentmonkey:
+          "{aecec67f-0d10-4fa7-b7c7-609a2db280cf}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/violentmonkey/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # Slash:
+          "{fc9bcce4-c12e-4c13-9ae7-a2808580d9f4}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/slash/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # User-Agent Switcher and Manager:
+          "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # RSSHub Radar:
+          "i@diygod.me" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/rsshub-radar/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # linkding:
+          "{61a05c39-ad45-4086-946f-32adb0a40a9d}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/linkding/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # WebRTC Protect - Protect IP Leak:
+          "{4bfcf5ab-fb35-4da0-bce3-d8ad07adb08f}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/webrtc-protect/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # xBrowserSync:
+          "{019b606a-6f61-4d01-af2a-cea528f606da}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/xbs/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # Cookie AutoDelete
+          "CookieAutoDelete@kennydo.com" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/cookie-autodelete/latest.xpi";
+            installation_mode = "normal_installed";
           };
         };
-  
+
         /* ---- PREFERENCES ---- */
         # Check about:config for options.
-        Preferences = { 
+        Preferences = {
           "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
           # "extensions.pocket.enabled" = lock-false;
           "extensions.screenshots.disabled" = lock-true;
@@ -108,7 +152,7 @@
           "browser.newtabpage.activity-stream.showSponsored" = lock-false;
           "browser.newtabpage.activity-stream.system.showSponsored" = lock-false;
           "browser.newtabpage.activity-stream.showSponsoredTopSites" = lock-false;
-          
+
           # myself custome
           # Show "Not Secure" for insecure sites
           "security.insecure_connection_text.enabled" = lock-true;
@@ -117,7 +161,7 @@
           # Enable HTTPS-only mode
           "dom.security.https_only_mode" = lock-true;
           "dom.security.https_only_mode_ever_enabled" = lock-true;
-          
+
           # https://shen.hong.io/nixos-for-philosophy-installing-firefox-latex-vscodium/
           # Privacy settings
           "privacy.donottrackheader.enabled" = true;
@@ -139,7 +183,7 @@
           "toolkit.telemetry.shutdownPingSender.enabled" = false;
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.updatePing.enabled" = false;
-          
+
           # As well as Firefox 'experiments'
           "experiments.activeExperiment" = false;
           "experiments.enabled" = false;
