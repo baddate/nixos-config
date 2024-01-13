@@ -60,14 +60,14 @@
       deadnix # Find and remove unused code in .nix source files
       alejandra # Nix Code Formatter
 
-      # #-- golang
-      # go
-      # gomodifytags
-      # iferr # generate error handling code for go
-      # impl # generate function implementation for go
-      # gotools # contains tools like: godoc, goimports, etc.
-      # gopls # go language server
-      # delve # go debugger
+      #-- golang
+      go
+      gomodifytags
+      iferr # generate error handling code for go
+      impl # generate function implementation for go
+      gotools # contains tools like: godoc, goimports, etc.
+      gopls # go language server
+      delve # go debugger
 
       # # -- java
       # jdk17

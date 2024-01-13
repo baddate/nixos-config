@@ -59,7 +59,7 @@ return {
     { import = "astrocommunity.pack.toml" },
     ---- Backend / System
     { import = "astrocommunity.pack.lua" },
-    -- { import = "astrocommunity.pack.go" },
+    { import = "astrocommunity.pack.go" },
     { import = "astrocommunity.pack.rust" },
     -- { import = "astrocommunity.pack.python" },
     -- { import = "astrocommunity.pack.java" },
@@ -312,8 +312,8 @@ return {
             code_actions.gitsigns,
             -- common refactoring actions based off the Refactoring book by Martin Fowler
             code_actions.refactoring,
-            -- code_actions.gomodifytags, -- Go - modify struct field tags
-            -- code_actions.impl,   -- Go - generate interface method stubs
+            code_actions.gomodifytags, -- Go - modify struct field tags
+            code_actions.impl,   -- Go - generate interface method stubs
             code_actions.shellcheck,
             code_actions.proselint, -- English prose linter
             code_actions.statix, -- Lints and suggestions for Nix.
@@ -329,7 +329,7 @@ return {
             diagnostics.hadolint,                -- Dockerfile linter
             -- formatting.black,                    -- Python formatter
             -- formatting.ruff,                     -- extremely fast Python linter
-            -- formatting.goimports,                -- Go formatter
+            formatting.goimports,                -- Go formatter
             formatting.shfmt,                    -- Shell formatter
             formatting.rustfmt,                  -- Rust formatter
             formatting.taplo,                    -- TOML formatteautoindentr
@@ -429,7 +429,7 @@ return {
       "taplo",          -- toml language server
       ---- Backend
       "lua_ls",         -- lua
-      -- "gopls",          -- go
+      "gopls",          -- go
       "rust_analyzer",  -- rust
       -- "pyright",        -- python
       -- "ruff_lsp",       -- extremely fast Python linter and code transformation
@@ -454,7 +454,7 @@ return {
       format_on_save = {
         enabled = true,
         allow_filetypes = {
-          -- "go",
+          "go",
           "jsonnet",
           "rust",
           -- "terraform",
