@@ -96,15 +96,15 @@
       #-- CloudNative
       nodePackages.dockerfile-language-server-nodejs
       # terraform  # install via brew on macOS
-      terraform-ls
+      # terraform-ls
       jsonnet
       jsonnet-language-server
       hadolint # Dockerfile linter
 
-      # -- Lisp like Languages
-      guile
-      racket-minimal
-      fnlfmt # fennel
+      # # -- Lisp like Languages
+      # guile
+      # racket-minimal
+      # fnlfmt # fennel
 
       #-- Others
       taplo # TOML language server / formatter / validator
