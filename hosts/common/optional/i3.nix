@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment = {
     # # i3block works with this config https://nixos.wiki/wiki/I3#i3blocks
-    # pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
+    pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
 
     # add authentication agent for polkit usage
     systemPackages = [
