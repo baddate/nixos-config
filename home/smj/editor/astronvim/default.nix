@@ -28,6 +28,7 @@ in {
     # TODO push my config to github and pull it
     "astronvim/lua/user" = {
       source = ./custom;
+      recursive = true;
     };
   };
 

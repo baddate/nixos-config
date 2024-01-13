@@ -33,7 +33,7 @@ return {
     { import = "astrocommunity.motion.flash-nvim" },
     -- diable toggleterm.nvim, zellij's terminal is far better than neovim's one
     -- { "akinsho/toggleterm.nvim",                                   enabled = false },
-    { "folke/flash.nvim",                                          vscode = false },
+    -- { "folke/flash.nvim",                                          vscode = false },
     -- Highly experimental plugin that completely replaces
     -- the UI for messages, cmdline and the popupmenu.
     { import = "astrocommunity.utility.noice-nvim" },
@@ -458,4 +458,32 @@ return {
       },
     },
   },
+  -- Configure require("lazy").setup() options
+  lazy = {
+    defaults = { lazy = true },
+    performance = {
+      rtp = {
+        -- customize default disabled vim plugins
+        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+      },
+    },
+  },
+
+  -- This function is run last and is a good place to configuring
+  -- augroups/autocommands and custom filetypes also this just pure lua so
+  -- anything that doesn't fit in the normal config locations above can go here
+  polish = function()
+    -- Set up custom filetypes
+    -- vim.filetype.add {
+    --   extension = {
+    --     foo = "fooscript",
+    --   },
+    --   filename = {
+    --     ["Foofile"] = "fooscript",
+    --   },
+    --   pattern = {
+    --     ["~/%.config/foo/.*"] = "fooscript",
+    --   },
+    -- }
+  end,
 }
