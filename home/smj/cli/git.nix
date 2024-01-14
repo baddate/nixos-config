@@ -65,4 +65,7 @@
       # sp = stash pop;
     };
   };
+  programs.lazygit = {
+    enable = true;
+  };
 }
