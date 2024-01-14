@@ -134,6 +134,23 @@
         "type": "github"
       }
     },
+    "mysecrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1705213230,
+        "narHash": "sha256-CSi1PZE+lMmV5+PLyAYnH0jRoLC8PRIbKrd/Mg1eaLs=",
+        "ref": "master",
+        "rev": "eaff5d9967182fbf7347312c41defdd59e2f1567",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@git.smj.im/smj/nixos-secrets.git"
+      },
+      "original": {
+        "ref": "master",
+        "type": "git",
+        "url": "ssh://git@git.smj.im/smj/nixos-secrets.git"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -258,6 +275,7 @@
       "inputs": {
         "astronvim": "astronvim",
         "home-manager": "home-manager",
+        "mysecrets": "mysecrets",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nixvim": "nixvim",

@@ -36,6 +36,10 @@
       # optional, not necessary for the module
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    mysecrets = {
+      url = "git+ssh://git@git.smj.im/smj/nixos-secrets.git?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {
