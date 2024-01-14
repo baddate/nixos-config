@@ -1,0 +1,15 @@
+# This example uses YAML anchors which allows reuse of multiple keys 
+# without having to repeat yourself.
+# Also see https://github.com/Mic92/dotfiles/blob/master/nixos/.sops.yaml
+# for a more complex example.
+keys:
+  # Users
+  - &smj age1dc03j32dhy7qdf2zel5a4yxcm48ppz6rv5d988x6d8sslnau9ehqrflf07
+  # Hosts
+  - &luna age1fsdr94cxjqucjyzjv8kxdz20jns3xmfg43zvmjw92h6j238d2usqt362wq
+creation_rules:
+  - path_regex: secrets/luna/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+    - age:
+      - *smj
+      - *luna
