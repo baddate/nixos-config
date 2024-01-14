@@ -1,4 +1,15 @@
-{
+{inputs, ...}:{
+  imports = [
+    inputs.sops-nix.homeManagerModules.sops
+  ];
+
+  sops = {
+    age.keyFile = "/home/smj/.config/sops/age/keys.txt";
+    secrets.atuin = {
+      sopsFile = ../../../secrets/luna/smj.yaml;
+      path = "/home/smj/.local/share/atuin/key";
+    };
+  };
   programs.atuin = {
     enable = true;
     # flags = [
