@@ -3,6 +3,9 @@
     enable = true;
     userName = "Sanmoji";
     userEmail = "me@smj.im";
+    extraConfig = {
+      core.editor = "nvim";
+    };
     delta = {
       enable = true;
       options = {
