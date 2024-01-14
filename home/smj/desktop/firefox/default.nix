@@ -129,6 +129,11 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/cookie-autodelete/latest.xpi";
             installation_mode = "normal_installed";
           };
+          # DuckDuckGo Privacy Essentials
+          "jid1-ZAdIEUB7XOzOJw@jetpack" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi";
+            installation_mode = "normal_installed";
+          };
         };
 
         /* ---- PREFERENCES ---- */
