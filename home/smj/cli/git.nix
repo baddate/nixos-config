@@ -1,7 +1,7 @@
 {
   programs.git = {
     enable = true;
-    userName = "smj";
+    userName = "Sanmoji";
     userEmail = "me@smj.im";
     delta = {
       enable = true;
