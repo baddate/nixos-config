@@ -94,34 +94,14 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/violentmonkey/latest.xpi";
             installation_mode = "normal_installed";
           };
-          # Slash:
-          "{fc9bcce4-c12e-4c13-9ae7-a2808580d9f4}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/your-slash/latest.xpi";
-            installation_mode = "normal_installed";
-          };
           # User-Agent Switcher and Manager:
           "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi";
             installation_mode = "normal_installed";
           };
-          # RSSHub Radar:
-          "i@diygod.me" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/rsshub-radar/latest.xpi";
-            installation_mode = "normal_installed";
-          };
-          # linkding:
-          "{61a05c39-ad45-4086-946f-32adb0a40a9d}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/linkding/latest.xpi";
-            installation_mode = "normal_installed";
-          };
           # WebRTC Protect - Protect IP Leak:
           "{4bfcf5ab-fb35-4da0-bce3-d8ad07adb08f}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/webrtc-protect/latest.xpi";
-            installation_mode = "normal_installed";
-          };
-          # xBrowserSync:
-          "{019b606a-6f61-4d01-af2a-cea528f606da}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/xbs/latest.xpi";
             installation_mode = "normal_installed";
           };
           # Cookie AutoDelete
@@ -133,6 +113,31 @@
           "jid1-ZAdIEUB7XOzOJw@jetpack" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi";
             installation_mode = "normal_installed";
+          };
+          # xBrowserSync:
+          "{019b606a-6f61-4d01-af2a-cea528f606da}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/xbs/latest.xpi";
+            installation_mode = "normal_installed";
+          };
+          # Slash:
+          "{fc9bcce4-c12e-4c13-9ae7-a2808580d9f4}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/your-slash/latest.xpi";
+            installation_mode = "allowed";
+          };
+          # RSSHub Radar:
+          "i@diygod.me" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/rsshub-radar/latest.xpi";
+            installation_mode = "allowed";
+          };
+          # linkding:
+          "{61a05c39-ad45-4086-946f-32adb0a40a9d}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/linkding-extension/latest.xpi";
+            installation_mode = "allowed";
+          };
+          # Linkwarden
+          "jordanlinkwarden@gmail.com" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/linkwarden/latest.xpi";
+            installation_mode = "allowed";
           };
         };
 
