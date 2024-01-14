@@ -17,6 +17,21 @@
       desktopManager.runXdgAutostartIfNone = true;
       displayManager.lightdm = {
         enable = true;
+        greeters.gtk = {
+          enable = true;
+          cursorTheme = {
+            name = "macOS-BigSur";
+            package = pkgs.apple-cursor;
+          };
+          iconTheme = {
+            name = "WhiteSur";
+            package = pkgs.whitesur-icon-theme;
+          };
+          theme = {
+            name = "WhiteSur-Light";
+            package = pkgs.whitesur-gtk-theme;
+          };
+        };
       };
       excludePackages = with pkgs; [
         xterm
