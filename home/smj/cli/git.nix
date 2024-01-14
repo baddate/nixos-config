@@ -5,6 +5,7 @@
     userEmail = "me@smj.im";
     extraConfig = {
       core.editor = "nvim";
+      init.defaultBranch = "master";
     };
     delta = {
       enable = true;
