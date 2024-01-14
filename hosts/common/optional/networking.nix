@@ -18,6 +18,9 @@
       address = "192.168.1.112";
       interface = "wlp5s0";
     };
+    hosts = {
+     "101.32.245.203" = [ "git.smj.im" ]; 
+    };
   };
 
 }
