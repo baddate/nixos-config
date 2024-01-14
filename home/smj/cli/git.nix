@@ -6,6 +6,7 @@
     delta = {
       enable = true;
       options = {
+        line-numbers = true;
         decorations = {
           commit-decoration-style = "bold yellow box ul";
           file-decoration-style = "none";
