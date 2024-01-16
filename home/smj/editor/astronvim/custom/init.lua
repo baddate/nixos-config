@@ -478,6 +478,11 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    -- https://vi.stackexchange.com/questions/37421/how-to-remove-neovim-trailing-white-space
+    vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+      pattern = { "*" },
+      command = [[%s/\s\+$//e]],
+    })
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
