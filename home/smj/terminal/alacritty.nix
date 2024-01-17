@@ -8,7 +8,7 @@
       window = {
         # title = "Terminal";
 
-        opacity = 0.5;
+        opacity = 0.8;
         padding = { y = 5; };
         # dimensions = {
         #   lines = 75;
