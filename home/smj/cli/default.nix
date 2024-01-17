@@ -5,6 +5,7 @@
     ./git.nix
     ./ziptools.nix
     ./direnv.nix
+    ./nb.nix
   ];
   home.packages = with pkgs; [
     bottom # System viewer
