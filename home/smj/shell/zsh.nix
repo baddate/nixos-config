@@ -1,4 +1,7 @@
 {lib, pkgs, ...}:{
+  home.packages = with pkgs; [
+    meslo-lgs-nf
+  ];
   # # Enable zsh completion. Don't forget to add
   # environment.pathsToLink = [ "/share/zsh" ];
   programs.zsh = {
@@ -13,14 +16,6 @@
       size = 200000;
     };
 
-    oh-my-zsh = {
-      enable = true;
-      theme = "robbyrussell";
-      # plugins = [
-      #   "git"
-      #   "zoxide"
-      # ];
-    };
     initExtraFirst = ''
       # fast-syntax-highlighting config
       # export FAST_WORK_DIR=XDG;
@@ -68,6 +63,20 @@
           rev = "23.07.13";
           sha256 = "0NW0TI//qFpUA2Hdx6NaYdQIIUpRSd0Y4NhwBbdssCs=";
         };
+      }
+      {
+      # refer: https://github.com/NixOS/nixpkgs/issues/154696#issuecomment-1238433989
+        # A prompt will appear the first time to configure it properly
+        # make sure to select MesloLGS NF as the font in Konsole
+        name = "powerlevel10k";
+        src = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+      # https://discourse.nixos.org/t/using-an-external-oh-my-zsh-theme-with-zsh-in-nix/6142/8
+      {
+        name = "powerlevel10k-config";
+        src = lib.cleanSource ./p10k-config;
+        file = "p10k.zsh";
       }
     ];
     # initExtra = ''
