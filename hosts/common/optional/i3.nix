@@ -6,6 +6,10 @@
     # add authentication agent for polkit usage
     systemPackages = [
       pkgs.polkit_gnome
+      (pkgs.writeScriptBin "xterm" ''
+        #!/bin/sh
+        exec ${pkgs.alacritty}/bin/alacritty "$@"
+      '')
     ];
   };
 
