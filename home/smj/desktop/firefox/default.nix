@@ -139,6 +139,11 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/linkwarden/latest.xpi";
             installation_mode = "allowed";
           };
+          # Shiori
+          "{8547b985-a7a0-408d-82d1-d185f8be1ff5}" = {
+            install_url = "https://github.com/go-shiori/shiori-web-ext/releases/download/v0.8.7/8e773e1bce7647f394bc-0.8.7.xpi";
+            installation_mode = "allowed";
+          };
         };
 
         /* ---- PREFERENCES ---- */
