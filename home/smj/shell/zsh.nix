@@ -63,14 +63,14 @@
           sha256 = "0NW0TI//qFpUA2Hdx6NaYdQIIUpRSd0Y4NhwBbdssCs=";
         };
       }
-      {
-      # refer: https://github.com/NixOS/nixpkgs/issues/154696#issuecomment-1238433989
-        # A prompt will appear the first time to configure it properly
-        # make sure to select MesloLGS NF as the font in Konsole
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
+      # {
+      # # refer: https://github.com/NixOS/nixpkgs/issues/154696#issuecomment-1238433989
+      #   # A prompt will appear the first time to configure it properly
+      #   # make sure to select MesloLGS NF as the font in Konsole
+      #   name = "powerlevel10k";
+      #   src = pkgs.zsh-powerlevel10k;
+      #   file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      # }
       # https://discourse.nixos.org/t/using-an-external-oh-my-zsh-theme-with-zsh-in-nix/6142/8
       {
         name = "powerlevel10k-config";
