@@ -31,15 +31,15 @@
       flake = false;
     };
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      # optional, not necessary for the module
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    mysecrets = {
-      url = "git+ssh://git@git.smj.im/smj/secrets.git?ref=master";
-      flake = false;
-    };
+    # sops-nix = {
+    #   url = "github:Mic92/sops-nix";
+    #   # optional, not necessary for the module
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # mysecrets = {
+    #   url = "git+ssh://git@git.smj.im/smj/secrets.git?ref=master";
+    #   flake = false;
+    # };
   };
 
   outputs = {

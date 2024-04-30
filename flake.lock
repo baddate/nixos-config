@@ -188,23 +188,6 @@
         "type": "github"
       }
     },
-    "mysecrets": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1705213230,
-        "narHash": "sha256-CSi1PZE+lMmV5+PLyAYnH0jRoLC8PRIbKrd/Mg1eaLs=",
-        "ref": "master",
-        "rev": "eaff5d9967182fbf7347312c41defdd59e2f1567",
-        "revCount": 1,
-        "type": "git",
-        "url": "ssh://git@git.smj.im/smj/secrets.git"
-      },
-      "original": {
-        "ref": "master",
-        "type": "git",
-        "url": "ssh://git@git.smj.im/smj/secrets.git"
-      }
-    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -237,22 +220,6 @@
       },
       "original": {
         "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-stable": {
-      "locked": {
-        "lastModified": 1713638189,
-        "narHash": "sha256-q7APLfB6FmmSMI1Su5ihW9IwntBsk2hWNXh8XtSdSIk=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "74574c38577914733b4f7a775dd77d24245081dd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "release-23.11",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -331,32 +298,9 @@
       "inputs": {
         "astronvim": "astronvim",
         "home-manager": "home-manager",
-        "mysecrets": "mysecrets",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "nixvim": "nixvim",
-        "sops-nix": "sops-nix"
-      }
-    },
-    "sops-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "nixpkgs-stable": "nixpkgs-stable"
-      },
-      "locked": {
-        "lastModified": 1713892811,
-        "narHash": "sha256-uIGmA2xq41vVFETCF1WW4fFWFT2tqBln+aXnWrvjGRE=",
-        "owner": "Mic92",
-        "repo": "sops-nix",
-        "rev": "f1b0adc27265274e3b0c9b872a8f476a098679bd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Mic92",
-        "repo": "sops-nix",
-        "type": "github"
+        "nixvim": "nixvim"
       }
     },
     "systems": {

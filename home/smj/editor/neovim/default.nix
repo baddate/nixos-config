@@ -1,7 +1,7 @@
 {
-  imports = [
-    ./plugins
-  ];
+  # imports = [
+  #   ./plugins
+  # ];
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
