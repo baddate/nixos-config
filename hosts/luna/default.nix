@@ -20,7 +20,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
     ./gpu.nix
-    ./luks.nix
+    # ./luks.nix
 
     ../common/global
 
@@ -80,6 +80,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
+    gnumake
   ];
 
   # This setups a SSH server. Very important if you're setting up a headless system.
@@ -95,5 +96,5 @@
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "24.05";
+  system.stateVersion = "23.11";
 }

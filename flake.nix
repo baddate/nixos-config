@@ -37,7 +37,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     mysecrets = {
-      url = "git+ssh://git@git.smj.im/smj/nixos-secrets.git?ref=master";
+      url = "git+ssh://git@git.smj.im/smj/secrets.git?ref=master";
       flake = false;
     };
   };
