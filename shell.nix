@@ -22,5 +22,9 @@
       gnupg
       age
     ];
+    # https://nixos-and-flakes.thiscute.world/zh/development/intro
+    shellHook = ''
+      exec zsh
+    '';
   };
 }
