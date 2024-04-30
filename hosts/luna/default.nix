@@ -64,6 +64,10 @@
 
   # FIXME: Add the rest of your current configuration
 
+  # refer to https://nixos.wiki/wiki/Dual_Booting_NixOS_and_Windows
+  # Setting RTC time standard to localtime, compatible with Windows in its default configuration:
+  time.hardwareClockInLocalTime = true;
+  
   networking.hostName = "luna"; # Define your hostname.
   # Enable networking
   networking.networkmanager.enable = true;
