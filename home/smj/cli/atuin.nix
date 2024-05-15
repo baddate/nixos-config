@@ -23,6 +23,7 @@
       search_mode = "fuzzy";
       common_prefix = ["sudo"];
       enter_accept = true;
+      records = false;
     };
   };
   programs.zsh = {
