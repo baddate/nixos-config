@@ -6,6 +6,7 @@
   # environment.pathsToLink = [ "/share/zsh" ];
   programs.zsh = {
     enable = true;
+    enableAutosuggestions = true;
     historySubstringSearch.enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = false;

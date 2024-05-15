@@ -2,10 +2,10 @@
 let ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
 in
 {
-  # sops.secrets.loginpwd = {
-  #   neededForUsers = true;
-  #   sopsFile = ../../../../secrets/luna/smj.yaml;
-  # };
+  sops.secrets.loginpwd = {
+    neededForUsers = true;
+    sopsFile = ../../../../secrets/luna/smj.yaml;
+  };
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     # FIXME: Replace with your username
@@ -14,7 +14,7 @@ in
       # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
       # Be sure to change it (using passwd) after rebooting!
       # initialPassword = "password";
-      # hashedPasswordFile = config.sops.secrets.loginpwd.path;
+      hashedPasswordFile = config.sops.secrets.loginpwd.path;
       shell = pkgs.zsh;
       isNormalUser = true;
       # openssh.authorizedKeys.keys = [
