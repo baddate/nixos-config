@@ -380,7 +380,7 @@ in {
         menu-0-1 = "󰍃 Logout";
         menu-0-1-exec = "i3-msg exit";
         menu-0-2 = " Reboot";
-        menu-0-2-exec = "systemctl reboot";
+        menu-0-2-exec = "pkexec reboot";
         menu-0-3 = " Shutdown";
         menu-0-3-exec = "systemctl poweroff";
       };
