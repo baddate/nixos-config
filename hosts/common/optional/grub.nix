@@ -2,6 +2,7 @@
   boot.loader = {
     grub = {
       enable = true;
+      default = "saved";
       device = "nodev";
       efiSupport = true;
       enableCryptodisk = true;
